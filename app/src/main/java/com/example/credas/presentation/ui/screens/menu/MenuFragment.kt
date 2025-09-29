@@ -11,7 +11,6 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import com.example.credas.databinding.FragmentMenuBinding
-import com.example.credas.presentation.ui.screens.menu.MenuUiState
 import com.example.credas.presentation.ui.adapter.FoodAdapter
 import com.example.credas.presentation.viewModel.MenuViewModel
 import dagger.hilt.android.AndroidEntryPoint

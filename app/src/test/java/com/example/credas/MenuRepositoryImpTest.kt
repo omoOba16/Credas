@@ -58,14 +58,11 @@ class MenuRepositoryImpTest {
 
     @Test
     fun `test getMenu returns success with empty list when API response body is null`() = runTest {
-        // Arrange
-        val mockResponse: Response<List<MenuDtoItem?>> = Response.success(null) // API call is successful but body is null
+        val mockResponse: Response<List<MenuDtoItem?>> = Response.success(null)
         coEvery { menuRemoteDataSource.getMenu() } returns mockResponse
 
-        // Act
         val result = menuRepositoryImp.getMenu()
 
-        // Assert
         assertTrue(result is NetworkState.Success)
         assertTrue("Expected empty list for null body",
             (result as NetworkState.Success).data?.isEmpty() == true
