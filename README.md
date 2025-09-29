@@ -20,4 +20,6 @@ Technologies & Libraries:
 
 •JSON Serialization: kotlinx.serialization
 
-•Image Loading: Coil•Testing: JUnit, MockK, Turbine
+•Image Loading: Coil
+
+•Testing: JUnit, MockK
