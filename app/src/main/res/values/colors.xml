@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Light theme colors -->
+    <color name="light_text_color">#000000</color>
+    <color name="light_background">#FFFFFFFF</color>
+
+    <!-- Dark theme colors -->
+    <color name="dark_text_color">#FFFFFF</color>
+    <color name="dark_background">#000000</color>
+</resources>

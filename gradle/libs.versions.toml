@@ -1,0 +1,73 @@
+[versions]
+agp = "8.12.3"
+kotlin = "2.2.20"
+coreKtx = "1.17.0"
+junit = "4.13.2"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+appcompat = "1.7.1"
+material = "1.13.0"
+activity = "1.11.0"
+constraintlayout = "2.2.1"
+retrofit = "3.0.0"
+retrofitConverter = "1.0.0"
+okhttp3 = "5.1.0"
+kotlinxJsonVersion = "1.9.0"
+hilt = "2.57.2"
+kotlinSerialization = "2.2.20"
+lifecycleRuntimeKtx = "2.9.4"
+navVersion = "2.9.5"
+coilVersion = "3.3.0"
+mockkVersion = '1.14.5'
+kotlinxCoroutinesTestVersion = "1.10.2"
+turbineVersion = "1.2.1"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTestVersion" }
+turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbineVersion" }
+
+# Retrofit
+retrofit-ktx = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-converter = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofitConverter" }
+
+# Square OkHttp
+square-okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3" }
+square-okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3" }
+
+# Kotlinx Serialization
+kotlinx-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxJsonVersion"}
+
+# Dagger Hilt 2
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler" , version.ref = "hilt"}
+
+# Navigation
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navVersion" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navVersion" }
+
+# Coil
+coil = { group = "io.coil-kt.coil3", name = "coil", version.ref = "coilVersion" }
+coil-network = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coilVersion" }
+
+# Mockk
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockkVersion" }
+mockk-android = { group = "io.mockk", name = "mockk-android", version.ref = "mockkVersion" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version = "2.2.20" }
+dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinSerialization" }
+navigation-safe-args = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navVersion" }
+

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Credas</string>
+    <string name="menu_fragment">Menu</string>
+    <string name="details_fragment">Details</string>
+</resources>
